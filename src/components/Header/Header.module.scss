@@ -1,0 +1,39 @@
+.header{
+	display: flex;
+	height: 60px;
+	width: 90%;
+	background-color: black;
+	color: white;
+	border-radius: 30px;
+	margin: 30px;
+
+	@media (max-width: 500px) {
+		width: 100%;
+		font-size: calc(1em - 0.5vw);
+	}
+}
+
+.nav{
+	display: flex;
+	width: 100%;
+	width: -webkit-fill-available;
+	align-items: center;
+	gap: 10px;
+	margin: 0 10px;
+	justify-content: flex-end;
+
+	@media (max-width: 1050px) {
+		justify-content: center;
+	}
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	width: 200px;
+	margin-left: 50px;
+
+	@media (max-width: 1050px) {
+		display: none;
+	}
+}

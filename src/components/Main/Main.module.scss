@@ -1,0 +1,35 @@
+.home {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+
+	.home_text {
+		h1 {
+			font-size: 50px;
+			font-weight: 700;
+		}
+
+		p {
+			font-size: 24px;
+		}
+
+		@media (min-width: 480px) and (max-width: 1024px) {
+			h1 {
+				font-size: calc(32px + (36 - 32) * ((100vw - 480px) / (1050 - 480)));
+			}
+			p {
+				font-size: calc(14px + (18 - 14) * ((100vw - 480px) / (1050 - 480)));
+			}
+		}
+	}
+
+	.home_photo {
+		// border-radius: 25px;
+	}
+
+	.home_image {
+		border-radius: 25px;
+		// max-width: 100%;
+		// object-fit: cover;
+	}
+}

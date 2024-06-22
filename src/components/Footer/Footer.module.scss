@@ -1,0 +1,21 @@
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: auto;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.footer_copyright{
+	@media (max-width: 500px) {
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+.footer_contacts{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}

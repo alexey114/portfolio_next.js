@@ -1,0 +1,47 @@
+.works {
+	h3 {
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+		margin: 40px;
+	}
+
+	.works_block {
+		display: flex;
+		margin-bottom: 25px;
+
+		.work_block {
+			display: flex;
+			flex-direction: column;
+			max-width: 500px;
+			width: 100%;
+			gap: 5px;
+
+			.work_name {
+				color: #1d2939;
+				font-weight: 700;
+			}
+
+			.work_date, .work_description {
+				color: #98A2B3;
+			}
+			.work_post {
+				color: #344054;
+				font-weight: 700;
+			}
+			.work_description {
+			}
+		}
+
+		.work_circle {
+			display: block;
+			background-color: orange;
+			width: 24px;
+			height: 24px;
+			border-radius: 12px;
+			border: solid 2px #000;
+			margin: 0 100px;
+			flex-shrink: 0;
+		}
+	}
+}
