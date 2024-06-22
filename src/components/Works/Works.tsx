@@ -11,26 +11,26 @@ interface IWorks {
 const works: IWorks[] = [
 	{
 		name: 'Цифровой результат',
-		city: 'Moscow',
+		city: 'Москва',
 		date: '03.2023 - 04.2024',
-		post: 'Middle Frontend developer',
+		post: 'Frontend разработчик',
 		description: 'Разработка веб / мобильных приложений в рамках госконтрактов',
 	},
 	{
 		name: 'Цифровой результат',
-		city: 'Moscow',
+		city: 'Москва',
 		date: '10.2021 - 02.2023',
-		post: 'Junior Frontend developer',
+		post: 'Младший Frontend разработчик',
 		description:
 			'Разработка веб приложений в рамках госконтрактов, а так же работа над внутренними программами / компонентами компании',
 	},
 	{
 		name: 'Частная практика',
-		city: 'Moscow',
+		city: 'Москва',
 		date: '04.2021 - 09.2021',
-		post: 'Traini Frontend developer',
+		post: 'Самостоятельная практика',
 		description:
-			'Создание сайтов для получения навыка вёрстки и программирования',
+			'Создание и вёрстка сайтов в рамках пет-проектов. Работа с CI/CD для развертывания в публичном пространстве.',
 	},
 ]
 
@@ -44,7 +44,7 @@ export default function Works() {
 						<div className={styles.works_block}>
 							<div className={styles.work_block}>
 								<div className={styles.work_name}>
-									{work.name},{work.city}
+									{work.name}, {work.city}
 								</div>
 								<div className={styles.work_date}>{work.date}</div>
 							</div>

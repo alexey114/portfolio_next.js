@@ -4,18 +4,19 @@
 	align-items: center;
 	margin-top: auto;
 	gap: 15px;
-	margin-bottom: 15px;
-}
+	padding-bottom: 50px;
 
-.footer_copyright{
-	@media (max-width: 500px) {
-		font-size: 12px;
-		text-align: center;
+	.footer_copyright{
+		@media (max-width: 500px) {
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+
+	.footer_contacts{
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
 	}
 }
 
-.footer_contacts{
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-}
