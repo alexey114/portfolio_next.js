@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import photo from '../../assets/photo/photo.jpg'
+import Project from '../Project/Project'
+import Skills from '../Skills/Skills'
 import Works from '../Works/Works'
 import styles from './Main.module.scss'
 
@@ -29,6 +31,8 @@ export function Main({}: IMain) {
 				</div>
 			</section>
 			< Works />
+			< Skills />
+			< Project />
 		</div>
 	)
 }

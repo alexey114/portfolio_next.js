@@ -1,8 +1,44 @@
-.contacts{
-	
-}
-
-.contact{
+.contacts {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+
+	.contacts_header {
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.contact {
+		display: flex;
+		width: 370px;
+		gap: 25px;
+		font-size: 20px;
+		font-weight: 400;
+		flex-direction: column;
+
+		color: white;
+		background-color: black;
+		border-radius: 50px;
+		padding: 25px;
+
+		.contact_header{
+			font-size: 27px;
+			font-weight: 500;
+		}
+
+
+		.contact_item{
+			display: flex;
+			gap: 25px;
+		}
+
+		// .contact_link{
+		// 	min-width: 360px;
+		// 	border-radius: 50px;
+		// 	padding: 20px;
+		// 	background-color: orange
+		// }
+	}
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import email from '../../assets/icons/e-mail.svg'
-import linkedIn from '../../assets/icons/linkedIn.svg'
+import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg'
 import styles from './Footer.module.scss'
 
@@ -14,7 +14,10 @@ const Footer = () => {
 				<a href='mailto:bomkoar@gmail.com'>
 					<Image src={email} alt='email' height={30} />
 				</a>
-				<Image src={linkedIn} alt='linkedIn' height={30} />
+				<a href="tel:+79296538035">
+					<Image src={phone} alt='phone' height={30} />
+				</a>
+				{/* <Image src={linkedIn} alt='linkedIn' height={30} /> */}
 			</div>
 			<div className={styles.footer_copyright}>
 				<p>Copyright© 2024 Бомко Алексей. Все права защищены.</p>
@@ -24,3 +27,4 @@ const Footer = () => {
 }
 
 export { Footer }
+

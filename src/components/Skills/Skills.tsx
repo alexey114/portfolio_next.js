@@ -1,7 +1,16 @@
 import { Skill } from './Skill'
+import styles from './Skills.module.scss'
 
 interface ISkills {
-	skills: []
+	basic: string[],
+	practice: string[],
+	picker: string[],
+	'project management': string[],
+	principles: string[],
+}
+
+interface ISkillsAll {
+	skills: object[]
 }
 
 export default function Skills() {
@@ -34,18 +43,32 @@ export default function Skills() {
 	// {principles: 'БЭМ, ООП, SOLID, KYSS, DRY, YAGNI'},
 
 	return (
-		<div>
-			<h1>Мои навыки:</h1>
-			<div>
-				<Skill title='Основной стек' skills={skills[0].basic} />
-				<Skill title='Практический опыт' skills={skills[1].practice} />
-				<Skill title='Сборщики' skills={skills[2].picker} />
+		<section className={styles.skills}>
+			<div className={styles.header}>
+				<h2>Навыки:</h2>
+			</div>
+			<div className={styles.skills_items}>
+				<Skill
+					title='Основной стек'
+					skills={skills[0].basic}
+				/>
+				<Skill
+					title='Практический опыт'
+					skills={skills[1].practice}
+				/>
+				<Skill
+					title='Сборщики'
+					skills={skills[2].picker}
+				/>
 				<Skill
 					title='Работа с проектами'
 					skills={skills[3]['project management']}
 				/>
-				<Skill title='Ознакомлен' skills={skills[4].principles} />
+				<Skill
+					title='Знаком'
+					skills={skills[4].principles}
+				/>
 			</div>
-		</div>
+		</section>
 	)
 }

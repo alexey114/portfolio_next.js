@@ -1,14 +1,16 @@
+import styles from './Skills.module.scss'
+
 interface ISkill {
 	title: string,
 	skills: string
 }
 
-export function Skill({ title, skills }) {
+export function Skill({ title, skills }: ISkill) {
 	return (
-	  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-		<div style={{ marginRight: '10px', fontWeight: 'bold' }}>{title}:</div>
+	  <div className={styles.skills_items}>
+		<div className={styles.skills_title}>{title}:</div>
 		{skills.map((skill, index) => (
-		  <div style={{ display: 'flex', backgroundColor: 'green', margin: 10, padding: '5px' }} key={index}>
+		  <div className={styles.skill} key={index}>
 			{skill}
 		  </div>
 		))}
