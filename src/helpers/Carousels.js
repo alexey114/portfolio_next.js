@@ -18,6 +18,7 @@ export default function ResponsiveCarousel() {
 					<div key={item.id}>
 						<div>
 							<img src={item.imageUrl} alt='slides' />
+							
 						</div>
 						<div>
 							<h2>{item.title}</h2>
