@@ -1,0 +1,22 @@
+{
+	"responsive": [
+		{
+			"id": 1,
+			"title": "Swiper Carousel Example",
+			"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
+			"imageUrl": "https://sun9-33.userapi.com/impf/c852120/v852120627/77738/KYF2M2Lf8tg.jpg?size=1000x1000&quality=96&sign=4647a5df91492e8b412ee3c236a2a6db&c_uniq_tag=LUy4ljJEYAWwp8g2kU3cLKZg0bfuvIpowpjKjjArpQA&type=album"
+		},
+		{
+			"id": 2,
+			"title": "Swiper Carousel Example",
+			"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
+			"imageUrl": "https://sun9-33.userapi.com/impf/c852120/v852120627/77738/KYF2M2Lf8tg.jpg?size=1000x1000&quality=96&sign=4647a5df91492e8b412ee3c236a2a6db&c_uniq_tag=LUy4ljJEYAWwp8g2kU3cLKZg0bfuvIpowpjKjjArpQA&type=album"
+		},
+		{
+			"id": 3,
+			"title": "Swiper Carousel Example",
+			"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque",
+			"imageUrl": "https://sun9-33.userapi.com/impf/c852120/v852120627/77738/KYF2M2Lf8tg.jpg?size=1000x1000&quality=96&sign=4647a5df91492e8b412ee3c236a2a6db&c_uniq_tag=LUy4ljJEYAWwp8g2kU3cLKZg0bfuvIpowpjKjjArpQA&type=album"
+		}
+	]
+}
