@@ -36,12 +36,19 @@
 		font-weight: bold;
 	}
 
-	.skills_items{
-		width: 100%;
+	.skills_item{
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		flex-wrap: wrap;
+	}
+
+	.skills_list{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
 	}
 
 	.skill {

@@ -4,24 +4,28 @@ import { Skill } from './Skill'
 import styles from './Skills.module.scss'
 
 interface ISkills {
-	basic: string[]
-	practice: string[]
-	picker: string[]
-	'project management': string[]
-	principles: string[]
-}
-
-interface ISkillsAll {
-	skills: object[]
+	basic?: string[]
+	practice?: string[]
+	picker?: string[]
+	'project management'?: string[]
+	principles?: string[]
 }
 
 export default function Skills() {
-	const skills = [
+	const skills: ISkills[] = [
 		{
-			basic: ['HTML', 'CSS', 'SASS/LESS', 'JS', 'React', 'TypeScript', 'Redux'],
+			'Основной стек': [
+				'HTML',
+				'CSS',
+				'SASS/LESS',
+				'JS',
+				'React',
+				'TypeScript',
+				'Redux',
+			],
 		},
 		{
-			practice: [
+			'Работал на практике': [
 				'Rest API',
 				'Websocket',
 				'Tailwind',
@@ -33,9 +37,9 @@ export default function Skills() {
 				'Expo',
 			],
 		},
-		{ picker: ['Webpack', 'Vite'] },
-		{ 'project management': ['GIT', 'Gitea', 'Jira', 'Confluence'] },
-		{ principles: ['БЭМ', 'ООП', 'SOLID', 'KYSS', 'DRY', 'YAGNI'] },
+		{ 'Любимые сборщики': ['Webpack', 'Vite'] },
+		{ 'Управлял проектами': ['GIT', 'Gitea', 'Jira', 'Confluence'] },
+		{ 'Посвящен в принципы': ['БЭМ', 'ООП', 'SOLID', 'KYSS', 'DRY', 'YAGNI'] },
 	]
 
 	// {basic: 'HTML, CSS, SASS/LESS, JS, React, TypeScript, Redux'},
@@ -47,20 +51,26 @@ export default function Skills() {
 	return (
 		<section className={styles.skills}>
 			<div className={styles.skills_resume}>
-				<a className={styles.skills_resume_save} href="./Resume_BomkoAlexey.pdf" download={"Резюме - Бомко Алексей"}>Скачать резюме</a>
+				<a
+					className={styles.skills_resume_save}
+					href='./Resume_BomkoAlexey.pdf'
+					download={'Резюме - Бомко Алексей'}
+				>
+					Скачать резюме
+				</a>
 			</div>
 			<div className={styles.header}>
 				<h2>Навыки:</h2>
 			</div>
 			<div className={styles.skills_items}>
-				<Skill title='Основной стек' skills={skills[0].basic} />
-				<Skill title='Практический опыт' skills={skills[1].practice} />
-				<Skill title='Сборщики' skills={skills[2].picker} />
-				<Skill
-					title='Работа с проектами'
-					skills={skills[3]['project management']}
-				/>
-				<Skill title='Знаком' skills={skills[4].principles} />
+				{skills.map((skillCategory, index) => {
+					const categoryName = Object.keys(skillCategory)[0] as keyof ISkills
+					const skillValues = skillCategory[categoryName]
+
+					return skillValues ? (
+						<Skill key={index} title={categoryName} skills={skillValues} />
+					) : null
+				})}
 			</div>
 		</section>
 	)

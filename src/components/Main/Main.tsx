@@ -5,9 +5,7 @@ import Skills from '../Skills/Skills'
 import Works from '../Works/Works'
 import styles from './Main.module.scss'
 
-interface IMain {}
-
-export function Main({}: IMain) {
+export function Main() {
 	return (
 		<div>
 			<section className={styles.home}>
