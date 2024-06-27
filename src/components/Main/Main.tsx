@@ -11,12 +11,11 @@ export function Main({}: IMain) {
 	return (
 		<div>
 			<section className={styles.home}>
-				<div className={styles.home_text}>
-					<h1>Frontend Developer</h1>
-					<p>Стаж более трех лет в различных проектах</p>
-					<p>
-						В том числе с крупными государственными заказчиками в рамках
-						госконтрактов
+				<div className={styles.home_headers}>
+					<h1 className={styles.home_header}>Frontend Developer</h1>
+					<p className={styles.home_text}>Стаж более трех лет в различных проектах</p>
+					<p className={styles.home_text}>В том числе с крупными государственными заказчиками в рамках
+					госконтрактов
 					</p>
 				</div>
 				<div className={styles.home_photo}>

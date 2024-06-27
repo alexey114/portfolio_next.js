@@ -1,12 +1,14 @@
+'use client'
+
 import { Skill } from './Skill'
 import styles from './Skills.module.scss'
 
 interface ISkills {
-	basic: string[],
-	practice: string[],
-	picker: string[],
-	'project management': string[],
-	principles: string[],
+	basic: string[]
+	practice: string[]
+	picker: string[]
+	'project management': string[]
+	principles: string[]
 }
 
 interface ISkillsAll {
@@ -44,30 +46,21 @@ export default function Skills() {
 
 	return (
 		<section className={styles.skills}>
+			<div className={styles.skills_resume}>
+				<a className={styles.skills_resume_save} href="./Resume_BomkoAlexey.pdf" download={"Резюме - Бомко Алексей"}>Скачать резюме</a>
+			</div>
 			<div className={styles.header}>
 				<h2>Навыки:</h2>
 			</div>
 			<div className={styles.skills_items}>
-				<Skill
-					title='Основной стек'
-					skills={skills[0].basic}
-				/>
-				<Skill
-					title='Практический опыт'
-					skills={skills[1].practice}
-				/>
-				<Skill
-					title='Сборщики'
-					skills={skills[2].picker}
-				/>
+				<Skill title='Основной стек' skills={skills[0].basic} />
+				<Skill title='Практический опыт' skills={skills[1].practice} />
+				<Skill title='Сборщики' skills={skills[2].picker} />
 				<Skill
 					title='Работа с проектами'
 					skills={skills[3]['project management']}
 				/>
-				<Skill
-					title='Знаком'
-					skills={skills[4].principles}
-				/>
+				<Skill title='Знаком' skills={skills[4].principles} />
 			</div>
 		</section>
 	)

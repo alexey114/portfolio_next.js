@@ -22,15 +22,13 @@ const Navigation = ({ navigationLinks }: Props) => {
 				const isActive = pathname === link.href
 
 				return (
-						<button key={link.href} className={styles.link}>
 							<Link
 								key={link.label}
 								href={link.href}
-								className={`${isActive ? styles.active : ''}`}
+								className={`${styles.link} ${isActive ? styles.active : ''}`}
 							>
 								{link.label}{' '}
 							</Link>
-						</button>
 				)
 			})}
 		</>

@@ -11,6 +11,26 @@
 
 	margin-bottom: 50px;
 
+	.skills_resume{
+		display: flex;
+		justify-content: flex-end;
+		color: white;
+		margin-bottom: 50px;
+		transition: all;
+		animation: normal;
+
+	}
+
+	.skills_resume_save{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 200px;
+		height: 50px;
+		border-radius: 25px;
+		background-color: #fd853a;
+	}
+
 	.skills_title {
 		margin-right: 10px;
 		font-weight: bold;

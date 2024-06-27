@@ -3,7 +3,7 @@ import ProjectCards from './ProjectCards'
 
 export default function Project() {
 	return (
-		<div className={styles.project}>
+		<section className={styles.project}>
 			<div className={styles.project_headers}>
 				<div className={styles.project_header}>
 					<h3>
@@ -18,9 +18,7 @@ export default function Project() {
 				</div>
 			</div>
 
-			<div>
-				<ProjectCards />
-			</div>
-		</div>
+			<ProjectCards />
+		</section>
 	)
 }

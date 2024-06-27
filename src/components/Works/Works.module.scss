@@ -1,5 +1,4 @@
 .works {
-
 	margin: 100px 0px;
 
 	h3 {
@@ -25,15 +24,14 @@
 				font-weight: 700;
 			}
 
-			.work_date, .work_description {
-				color: #98A2B3;
+			.work_date,
+			.work_description {
+				color: #98a2b3;
 			}
 			.work_post {
 				color: #344054;
 				font-weight: 700;
 			}
-			// .work_description {
-			// }
 		}
 
 		.work_circle {
@@ -45,6 +43,22 @@
 			border: solid 2px #000;
 			margin: 0 100px;
 			flex-shrink: 0;
+
+
+
+			@media (min-width: 550px) and (max-width: 900px) {
+				margin: 0 calc(20px + (30 - 20) * ((100vw - 550px) / (950 - 550)));
+			}
+
+			@media (max-width: 550px) {
+				display: none;
+			}
+		}
+
+		@media (max-width: 550px) {
+			flex-direction: column;
+			gap: 20px;
+			border-bottom: 2px solid #fd853a;
 		}
 	}
 }

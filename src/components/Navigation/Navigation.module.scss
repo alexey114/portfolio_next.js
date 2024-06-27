@@ -1,14 +1,13 @@
 .link{
 	width: 150px;
-	// padding: 10px;
-}
-
-.active {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 40px;
 	border-radius: 20px;
+}
+
+.active {
 	background-color: #FD853A;
 }
 
