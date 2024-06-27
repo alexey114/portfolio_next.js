@@ -4,11 +4,11 @@ import { Skill } from './Skill'
 import styles from './Skills.module.scss'
 
 interface ISkills {
-	basic?: string[]
-	practice?: string[]
-	picker?: string[]
-	'project management'?: string[]
-	principles?: string[]
+	'Основной стек'?: string[]
+	'Работал на практике'?: string[]
+	'Любимые сборщики'?: string[]
+	'Управлял проектами'?: string[]
+	'Посвящен в принципы'?: string[]
 }
 
 export default function Skills() {
@@ -41,12 +41,6 @@ export default function Skills() {
 		{ 'Управлял проектами': ['GIT', 'Gitea', 'Jira', 'Confluence'] },
 		{ 'Посвящен в принципы': ['БЭМ', 'ООП', 'SOLID', 'KYSS', 'DRY', 'YAGNI'] },
 	]
-
-	// {basic: 'HTML, CSS, SASS/LESS, JS, React, TypeScript, Redux'},
-	// {practice:'Rest API, Websocket, Tailwind, React Native, Jest, CI/CD, Docker, Android Studio, Expo'},
-	// {picker: 'Webpack, Vite'},
-	// {'project management': 'GIT, Gitea, Jira, Confluence'},
-	// {principles: 'БЭМ, ООП, SOLID, KYSS, DRY, YAGNI'},
 
 	return (
 		<section className={styles.skills}>
