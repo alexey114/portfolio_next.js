@@ -10,7 +10,7 @@ export default function Contact() {
 			<h3 className={styles.contacts_header}>Контакты:</h3>
 			<div className={styles.contact}>
 				{/* <div className={styles.contact_link}>Телефон: +79296538035</div> */}
-				<h4>УЗНАЙТЕ БОЛЬШЕ О МОЁМ ОПЫТЕ НАПИСАВ ИЛИ ПОЗВОНИВ МНЕ</h4>
+				<h4 className={styles.contact_header}>Узнайте больше о моём опыте написав или позвонив мне</h4>
 				<div className={styles.contact_item}>
 					<a
 						className={styles.contact_link}

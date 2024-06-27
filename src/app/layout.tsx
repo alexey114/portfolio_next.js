@@ -9,8 +9,7 @@ const inter = Inter({ subsets: ['latin'] }) // импорт шрифтов им�
 //добавляется на любую страницу
 export const metadata: Metadata = {
 	// Работа с СЕО страницы
-	title: 'Portfolio App',
-	description: 'Portfolio frontend developer Bomko Alexey',
+	title: 'Портфолио | frontend developer Bomko Alexey',
 }
 
 export default function RootLayout({

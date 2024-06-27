@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-	title: 'About frontend developer Bomko Alexey',
+	title: 'Обо мне | frontend developer Bomko Alexey',
 }
 
 export default function About() {
