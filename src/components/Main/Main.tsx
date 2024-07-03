@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import photo from '../../assets/photo/photo.jpg'
-import ResponsiveCarousel from '../../helpers/Carousels'
+import CarouselDemo from '../Carousel/CarouselDemo'
 import Project from '../Project/Project'
 import Skills from '../Skills/Skills'
 import Works from '../Works/Works'
@@ -28,10 +28,10 @@ export function Main() {
 					/>
 				</div>
 			</section>
+			< CarouselDemo />
 			< Works />
 			< Skills />
 			< Project />
-			< ResponsiveCarousel  />
 		</div>
 	)
 }

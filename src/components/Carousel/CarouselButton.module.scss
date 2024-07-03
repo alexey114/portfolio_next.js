@@ -1,0 +1,32 @@
+.icon_button {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+
+	&.left,
+	&.left.disable {
+		background: url('../../assets/icons/arrow-left-disabled.png') center/ 100%
+			100% no-repeat;
+	}
+
+	&.left:hover {
+		background: url('../../assets/icons/arrow-left-active.png') center/ 100%
+			100% no-repeat;
+	}
+
+	&.right,
+	&.right.disable {
+		background: url('../../assets/icons/arrow-right-disabled.png') center/ 100%
+			100% no-repeat;
+	}
+
+	&.right:hover {
+		background: url('../../assets/icons/arrow-right-active.png') center/ 100%
+			100% no-repeat;
+	}
+
+	&.right.disable,
+	&.left.disable {
+		cursor: pointer;
+	}
+}
