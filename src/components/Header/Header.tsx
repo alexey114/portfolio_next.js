@@ -6,7 +6,7 @@ const navigationItems = [
 	// { label: 'Блог', href: '/blog' },
 	// { label: 'Обо мне', href: '/about' },
 	{ label: 'Резюме', href: '/resume' },
-	{ label: 'Проекты', href: '/projects'},
+	// { label: 'Проекты', href: '/projects'},
 	{ label: 'Контакты', href: '/contacts' },
 ]
 

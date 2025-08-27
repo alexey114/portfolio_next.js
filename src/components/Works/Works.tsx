@@ -37,7 +37,7 @@ const works: IWorks[] = [
 export default function Works() {
 	return (
 		<div className={styles.works}>
-			<h3>Мой коммерческий и практический опыт:</h3>
+			<h3>Мой опыт:</h3>
 			<ul>
 				{works.map((work: IWorks) => (
 					<li key={work.date}>
